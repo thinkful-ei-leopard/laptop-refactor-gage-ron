@@ -5,12 +5,9 @@ import Feature from './Feature';
 import slugify from 'slugify';
 
 function Customize(props) {
-    console.log(props)
     return (
         <form className="main__form">
             <h2>Customize your laptop</h2>
-            {/* {features} */}
-            {/* We need to iterate over our FEATURES */}
             {Object.keys(props.features).map((feature, idx) => {
                      const featureHash = feature + '-' + idx;
                      const options = props.features[feature].map((item, idx)=> {

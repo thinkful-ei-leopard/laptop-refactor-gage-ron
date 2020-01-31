@@ -9,7 +9,6 @@ function Cart(props) {
 
     return (<section className="main__summary">
     <h2>Your cart</h2>
-    {/* {summary} */}
     { Object.keys(props.stateSelected).map((feature, idx) => {
       const featureHash = feature + '-' + idx;
       const selectedOption = props.stateSelected[feature];
