@@ -8,9 +8,9 @@
 //  -Cart
 //    --Summary
 import React, { Component } from 'react';
-import Header from './Header';
-import Customize from './Customize';
-import Cart from './Cart';
+import Header from './components/Header';
+import Customize from './components/Customize';
+import Cart from './components/Cart';
 
 import './App.css';
 
