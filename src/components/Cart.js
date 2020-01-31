@@ -14,6 +14,7 @@ function Cart(props) {
       const selectedOption = props.stateSelected[feature];
 
       return <Summary 
+                key={idx}
                 USCurrencyFormat={props.USCurrencyFormat} 
                 featureHash={featureHash} 
                 selectedOption={selectedOption} 
