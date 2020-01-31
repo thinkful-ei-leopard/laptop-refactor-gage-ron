@@ -1,7 +1,16 @@
+// Master Component
+
+// Component Structure:
+// App
+//  -Header
+//  -Customize
+//    --Feature
+//  -Cart
+//    --Summary
 import React, { Component } from 'react';
-import Header from './Header';
-import Customize from './Customize';
-import Cart from './Cart';
+import Header from './components/Header';
+import Customize from './components/Customize';
+import Cart from './components/Cart';
 
 import './App.css';
 
@@ -48,8 +57,14 @@ class App extends Component {
       <div className="App">
         <Header />
         <main>
-          <Customize USCurrencyFormat={USCurrencyFormat} updateFeature={this.updateFeature} stateSelected={this.state.selected} features={this.props.features} />
-          <Cart USCurrencyFormat={USCurrencyFormat} stateSelected={this.state.selected}/>
+          <Customize 
+            USCurrencyFormat={USCurrencyFormat} 
+            updateFeature={this.updateFeature} 
+            stateSelected={this.state.selected} 
+            features={this.props.features} />
+          <Cart 
+            USCurrencyFormat={USCurrencyFormat} 
+            stateSelected={this.state.selected}/>
         </main>
 
       </div>

@@ -13,7 +13,11 @@ function Cart(props) {
       const featureHash = feature + '-' + idx;
       const selectedOption = props.stateSelected[feature];
 
-      return <Summary USCurrencyFormat={props.USCurrencyFormat} featureHash={featureHash} selectedOption={selectedOption} feature={feature}/>;
+      return <Summary 
+                USCurrencyFormat={props.USCurrencyFormat} 
+                featureHash={featureHash} 
+                selectedOption={selectedOption} 
+                feature={feature}/>;
     })}
 
     <div className="summary__total">

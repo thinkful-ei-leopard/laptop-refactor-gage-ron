@@ -12,7 +12,16 @@ function Customize(props) {
                      const featureHash = feature + '-' + idx;
                      const options = props.features[feature].map((item, idx)=> {
                         const itemHash = slugify(JSON.stringify(item));
-                        return <Feature key={idx} item={item} feature={feature} updateFeature={props.updateFeature} featureHash={featureHash} stateSelected={props.stateSelected} options={options} itemHash={itemHash} USCurrencyFormat={props.USCurrencyFormat} />;
+                        return <Feature 
+                                    key={idx} 
+                                    item={item} 
+                                    feature={feature} 
+                                    updateFeature={props.updateFeature} 
+                                    featureHash={featureHash} 
+                                    stateSelected={props.stateSelected} 
+                                    options={options} 
+                                    itemHash={itemHash} 
+                                    USCurrencyFormat={props.USCurrencyFormat} />;
                      })      
                     return (
                         <fieldset className="feature" key={featureHash}>
