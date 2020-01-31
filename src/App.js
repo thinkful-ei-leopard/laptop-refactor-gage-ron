@@ -6,6 +6,7 @@
 //  -Customize
 //    --Feature
 //  -Cart
+//    --Summary
 import React, { Component } from 'react';
 import Header from './Header';
 import Customize from './Customize';
