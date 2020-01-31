@@ -103,7 +103,7 @@ class App extends Component {
         <Header />
         <main>
           <Customize USCurrencyFormat={USCurrencyFormat} stateSelected={this.state.selected} features={this.props.features} />
-          <Cart USCurrencyFormat={USCurrencyFormat} />
+          <Cart USCurrencyFormat={USCurrencyFormat} stateSelected={this.state.selected}/>
         </main>
 
       </div>
@@ -114,7 +114,6 @@ class App extends Component {
       //    Feature
       // Cart
       //    Summary
-      //    Total
 
       // <div className="App">
       //   <header>
