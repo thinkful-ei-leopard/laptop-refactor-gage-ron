@@ -1,3 +1,11 @@
+// Master Component
+
+// Component Structure:
+// App
+//  -Header
+//  -Customize
+//    --Feature
+//  -Cart
 import React, { Component } from 'react';
 import Header from './Header';
 import Customize from './Customize';
