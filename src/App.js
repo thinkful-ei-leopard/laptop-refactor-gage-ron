@@ -92,17 +92,17 @@ class App extends Component {
       );
     });
 
-    const total = Object.keys(this.state.selected).reduce(
-      (acc, curr) => acc + this.state.selected[curr].cost,
-      0
-    );
+    // const total = Object.keys(this.state.selected).reduce(
+    //   (acc, curr) => acc + this.state.selected[curr].cost,
+    //   0
+    // );
 
     return (
 
       <div className="App">
         <Header />
         <main>
-          <Customize USCurrencyFormat={USCurrencyFormat} stateSelected={this.state.selected} features={this.props.features} />
+          <Customize USCurrencyFormat={USCurrencyFormat} updateFeature={this.updateFeature} stateSelected={this.state.selected} features={this.props.features} />
           <Cart USCurrencyFormat={USCurrencyFormat} stateSelected={this.state.selected}/>
         </main>
 

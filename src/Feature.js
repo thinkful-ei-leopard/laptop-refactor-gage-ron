@@ -10,7 +10,7 @@ function Feature(props) {
                 className="feature__option"
                 name={slugify(props.feature)}
                 checked={props.item.name === props.stateSelected[props.feature].name}
-                onChange={e => this.updateFeature(props.feature, props.item)}
+                onChange={e => props.updateFeature(props.feature, props.item)}
               />
               <label htmlFor={props.itemHash} className="feature__label">
                 {props.item.name} ({props.USCurrencyFormat.format(props.item.cost)})
